@@ -1,0 +1,293 @@
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --LightPink: hsl(321, 100%, 78%);
+    --LightRed: hsl(0, 100%, 63%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --VeryPaleBlue: hsl(207, 100%, 98%);
+}
+
+
+/* ======================== Font  ======================== */
+
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+p, .hide {
+    font-family: 'Open Sans', sans-serif;;
+}
+
+/* ======================== Top header ======================== */
+
+.btn-top {
+    border: 1px solid var(--Pink);
+    border-radius: 20px;
+    color: var(--Pink);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn-top:hover {
+    outline: 1px solid var(--LightPink);
+}
+
+/* ======================== Header ======================== */
+
+._Header{
+    margin-top: 150px;
+}
+
+.P_header {
+    width: 40%;
+    color: var(--VeryDarkCyan);
+}
+
+.btn {
+    border: 1px solid var(--Pink);
+    border-radius: 30px;
+    color: var(--VeryPaleBlue);
+    background-color: var(--Pink);
+    box-shadow: 1px 5px 8px var(--VeryDarkCyan);
+}
+
+.btn:hover {
+    background-color: var(--LightPink);
+    color: var(--VeryPaleBlue);
+}
+
+/* ======================== _BigImage ======================== */ 
+
+._BigImage{
+    margin-top: 100px;
+}
+
+/* ======================== 1.4K+ 2.7m+ ======================== */ 
+
+.Commu {
+    width: 75%;
+    margin-top: 100px;
+    
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+/* ======================== Grow Together ======================== */ 
+
+.Content1 {
+    width: 85%;
+    margin-top: 150px;
+}
+
+
+
+/* ======================== Flowing Conversations ======================== */ 
+
+.Content2 {
+    width: 85%;
+}
+
+/* ======================== Your Users ======================== */ 
+
+.Content3 {
+    width: 85%;
+}
+
+/* ======================== Ready to build ======================== */
+
+.Content4 {
+    margin-top: 150px;
+}
+
+
+/* ======================== Footer ======================== */
+
+.btn1 {
+    border: 1px solid var(--Pink);
+    border-radius: 30px;
+    color: var(--VeryPaleBlue);
+    background-color: var(--Pink);
+    box-shadow: 1px 5px 8px var(--VeryDarkCyan);
+}
+
+footer p {
+    font-size: small;
+    width: 50%;
+}
+
+.Footer-content {
+    background-color: var(--VeryDarkCyan);
+    color: var(--VeryPaleBlue);
+    border-radius: 20px;
+    width: 85%;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.btn-footer {
+    border-radius: 5px;
+    color: var(--VeryPaleBlue);
+    background-color: var(--Pink);
+}
+
+.InputEmail {
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 100%;
+}
+
+.hide {
+    font-size: small;
+    display: none;
+}
+
+.btn-footer:hover {
+    background-color: var(--LightPink);
+    color: var(--VeryPaleBlue);
+}
+
+.InputEmail:hover {
+    cursor: pointer;
+    outline: 1px solid red;
+}
+
+.InputEmail:hover + .hide{
+    display: block;
+    color: red;
+}
+
+
+/* ======================== Background ======================== */ 
+
+.Content1 {
+    border: 2px solid #d2eff5;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.Content2 {
+    border: 2px solid #d2eff5;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.Content3 {
+    border: 2px solid #d2eff5;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+/* ======================== Media quary ======================== */
+
+@media screen and (max-width: 375px){
+
+    /* Top Header */
+
+    .Logo {
+        width: 50%;
+    }
+
+    .btn-top {
+        font-size: x-small;
+    }
+    
+
+    /* Header */
+    .P_header {
+        width: 100%;
+    }
+    
+    ._BigImage img{
+        width: 100%;
+    }
+
+    /* Grow Together */ 
+
+    .Content1-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Content1-1 h3, .Content1-1 p {
+        text-align: center;
+    }
+
+    .Content1-1 p {
+        font-size: small;
+    }
+
+
+
+    /* Flowing Conversations */ 
+    
+    .Content2 h3, .Content2 p {
+        text-align: center;
+    }
+
+    .Content2 p {
+        font-size: small;
+    }
+
+
+    /* Your Users */ 
+
+    .Content3-1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Content3-1 h3, .Content3-1 p {
+        text-align: center;
+    }
+
+    .Content3-1 p {
+        font-size: small;
+    }
+
+    /*  Ready to build */
+
+    .Content4 h1{
+        text-align: center;
+    }
+
+    /* Footer */
+    
+    .Footer-content1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .P_footer1, .P_footer2, input {
+        width: 100%;
+    }
+
+    .btn-footer {
+        float: right;
+    }
+
+    .Footer-content1-1 {
+        margin-top: 30px;
+    }
+
+
+    .Footer-input-button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .InputEmail {
+        margin-bottom: 15px;
+    }
+
+}
+
